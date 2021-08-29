@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/200180007_231896275133475_5018060082881759907_n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #0A1D37;
+    height: 50px;
+}
+main figure{
+    display: inline-block;
+
+}
+main figure img{
+    width: 350px;
+    height: 280px;
+}
+main figure figcaption{
+    background-color: #fff;
+    height: 52px;
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    
+    
+    text-transform: uppercase;
+}
+header>nav {
+    height: 100%;
+}
+
+header>nav>ul {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+header>nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+header>nav a {
+    height: 100%;
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header>nav a:hover {
+    transition-duration: 0.4s;
+    background-color: #fff;
+    color: #0A1D37;
+}
+
+footer {
+    background-color: black;
+}
+
+/* main style */
+
+main {
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+/* side nave style */
+
+.side_nav_section {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.side_nav_section ul {
+    display: block;
+    height: 100%;
+    background-color: #0A81AB;
+}
+
+.side_nav_section ul span {
+    display: block;
+    width: calc( 100% - 10px);
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.side_nav_section ul li {
+    display: block;
+    width: 100%;
+}
+
+.side_nav_section ul a {
+    display: block;
+    width: calc( 100% - 10px);
+    font-size: 24px;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.side_nav_section ul a:hover {
+    background-color: #242424;
+    color: #fff;
+    transition-duration: .4s;
+}
+
+.main_container {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+/* car page style */
+
+.main_container .main_item #search_form {
+    padding: 20px;
+    border: solid 1px #242424;
+    background-color: #fff;
+}
+
+.main_container .main_item #search_form legend {
+    background-color: #242424;
+    width: 80%;
+    padding: 2.5px 0;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.main_container #filter_section {
+    padding: 10px;
+}
+
+.main_container .main_item #search_form table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.main_container .main_item #search_form table th {
+    background-color: #242424;
+    width: 170px;
+    font-family: 'Staatliches', cursive;
+    color: #fff;
+    font-size: 22px;
+    word-break: break-all;
+    font-family: 'Bebas Neue', cursive;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main_container .main_item #search_table_container {
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.main_container .main_item #search_form table td {
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main_container .main_item #search_form table tr:nth-child(odd) {
+    background-color: #0A81AB;
+    color: #fff;
+}
+
+.main_container .main_item #search_form table tr:nth-child(even) {
+    background-color: #0C4271;
+    color: #fff;
+}
+
+.main_container .main_item #search_form table tr div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.main_container .main_item #search_form table tr a {
+    padding: 5px 10px;
+    background-color: white;
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    margin: 1px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.main_container .main_item #search_form table tr a:hover {
+    background-color: #242424;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* login page style*/
+
+main #login_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main #login_form {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+main #login_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main #login_form fieldset label {
+    font-size: 22px;
+    color: #242424;
+}
+
+main #login_form fieldset [type='text'], main #login_form fieldset [type='password'] {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main #login_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main #login_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* personal form page style*/
+
+main #personal_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main #personal_form {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+main #personal_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main #personal_form fieldset label {
+    font-size: 22px;
+    color: #242424;
+}
+
+main #personal_form fieldset input {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main #personal_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main #personal_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+#personal_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* personal form page style*/
+
+main #account_form_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main #account_form {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+main #account_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main #account_form fieldset label {
+    font-size: 22px;
+    color: #242424;
+}
+
+main #account_form fieldset input {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main #account_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main #account_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+#account_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* add car page */
+
+main .main_item #add_car_form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+main .main_item #add_car_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main .main_item #add_car_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+main .main_item #add_car_form fieldset [type='text'] {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main .main_item #add_car_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main .main_item #add_car_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .main_item #car_image_form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+main .main_item #car_image_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main .main_item #car_image_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+main .main_item #car_image_form fieldset [type='text'] {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main .main_item #car_image_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main .main_item #car_image_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* set car view page style */
+
+.main_container .main_item #car_info {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: 'Staatliches', cursive;
+}
+
+.main_container .main_item #car_info caption {
+    background-color: #fff;
+    font-size: 32px;
+}
+
+.main_container .main_item #car_info th {
+    background-color: #242424;
+    padding: 10px 10px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(168, 163, 163);
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main_container .main_item #car_info td {
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main_container .main_item #car_info tr:nth-child(odd) {
+    background-color: #0A81AB;
+    color: #fff;
+}
+
+.main_container .main_item #car_info tr:nth-child(even) {
+    background-color: #0C4271;
+    color: #fff;
+}
+
+.main_container .main_item #car_info+div {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container .main_item #car_info+div img {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+
+/* rent car page style */
+
+main .main_item #rent_form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+main .main_item #rent_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main .main_item #rent_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+main .main_item #rent_form fieldset [type='text'] {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main .main_item #rent_form fieldset [type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+}
+
+main .main_item #rent_form fieldset [type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .main_item #rent_form fieldset .customized_label {
+    font-size: 22px;
+}
+
+main .main_item #rent_form fieldset input[name='MExpireDate'], main .main_item #rent_form fieldset input[name='YExpireDate'] {
+    display: inline-block;
+    width: 50px;
+}
+
+/* table class */
+
+.main_container .main_item #table_container {
+    background-color: #0A81AB;
+    overflow-y: scroll;
+    border: solid 1px #fff;
+    padding: 10px;
+    height: 500px;
+}
+
+.main_container .main_item .data_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: 'Staatliches', cursive;
+}
+
+.main_container .main_item .data_table caption {
+    background-color: #fff;
+    font-size: 32px;
+}
+
+.main_container .main_item .data_table th {
+    background-color: #242424;
+    padding: 10px 10px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(168, 163, 163);
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+    width: 175px;
+}
+
+.main_container .main_item .data_table td {
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+    font-size: 22px;
+    word-break: break-all;
+}
+
+.main_container .main_item .data_table tr:nth-child(odd) {
+    background-color: #0A81AB;
+    color: #fff;
+}
+
+.main_container .main_item .data_table tr:nth-child(even) {
+    background-color: #0C4271;
+    color: #fff;
+}
+.main_container .main_item .data_table  tr a {
+    padding: 5px 10px;
+    background-color: white;
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    margin: 1px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.main_container .main_item .data_table  tr a:hover {
+    background-color: #242424;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* customer update page */
+
+main .main_item #update_customer_form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+main .main_item #update_customer_form fieldset {
+    font-family: 'Staatliches', cursive;
+    border: solid 2px lightgray;
+    padding: 10px 50px;
+}
+
+main .main_item #update_customer_form legend {
+    font-size: 24px;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+main .main_item #update_customer_form fieldset input {
+    width: 220px;
+    padding: 10px 20px;
+    margin: 5px 0 10px 0;
+}
+
+main .main_item #update_customer_form fieldset input[type='submit'] {
+    background-color: #242424;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Staatliches', cursive;
+    margin: 10px 0;
+    width: 120px;
+}
+
+main .main_item #update_customer_form fieldset input[type='submit']:hover {
+    background-color: #0C4271;
+    color: #fff;
+    cursor: pointer;
+}
